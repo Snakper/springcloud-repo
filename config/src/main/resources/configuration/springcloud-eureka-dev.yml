@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: com.cloud.eureka-server
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceurl:
+      defaultZone: http://${eureka.instance.hostname}/eureka/
+
+
+server:
+  port: 8080
