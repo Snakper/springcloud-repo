@@ -16,5 +16,5 @@ server:
 zuul:
   routes:
     hello:
-      path: /test
+      path: /test/**
       serviceId: com.cloud.eureka-service-client
